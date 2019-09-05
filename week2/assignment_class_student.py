@@ -16,11 +16,6 @@ class Student:
 		self.marks[1] = int(input("Enter marks#2 :"))
 		self.marks[2] = int(input("Enter marks#3 :"))
 st1=Student()
-'''
-st1.display()
-st1.entry()
-st1.display()
-'''
 while True:
 	res=int(input('Enter Response (1-display, 2-modify, 3-quit) :'))
 	if res == 1:
