@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Patient Details</title>
+</head>
+<body>
+	<h1>Patient Details</h1>
+	<p id = "Demo"></p>
+	<script>
+		var myObj, i, x="<hr>";
+		myObj=[
+				{"Patient":"Amar", "Doctor":"Ajay", "Disease":"Viral", "Symptomes" : "High Fever, Fatigue, Dizziness, Weakness"},
+				{"Patient":"Prem", "Doctor":"Sujay", "Disease":"Chickenpox","Symptomes" : "Mild Fever, Lack of appetite"},
+			  ];
+
+		for (i in myObj) {
+			x+="<h2> Patient - "+(Number(i)+1)+"</h2><hr>";
+			x+="Patient Name : "+myObj[i].Patient+"<br>";
+			x+="Doctor Name : Dr."+myObj[i].Doctor+"<br>";
+			x+="Disease : "+myObj[i].Disease+"<br>";
+			x+="Symptomes : "+myObj[i].Symptomes+"<br>";
+			x+="<hr>"
+		}
+		//x=myObj.cars[0];
+		document.getElementById("Demo").innerHTML=x;
+	</script>
+</body>
+</html>
