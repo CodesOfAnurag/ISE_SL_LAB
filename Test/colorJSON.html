@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color File</title>
+</head>
+<body style="background-color:Black">
+	<h1 style="color:White" >Color</h1>
+	<p id = "color"></p>
+	<script>
+		var myObj, i, x="";
+		myObj=[
+                {"color":"PaleGreen", "code" : "#98FB98"},
+				{"color":"Salmon", "code" : "#FA8072"},
+                {"color":"Tomato", "code" : "#FF6347"},
+                {"color":"OrangeRed", "code": "#FF4500"}, 
+                {"color":"DodgerBlue", "code" : "#1E90FF"},
+              ];
+
+		for (i in myObj) {
+			x+='<h4 style="color:'+myObj[i].color+';">';
+            x+=myObj[i].color+' : '+myObj[i].code+'</h4>';
+		}
+		document.getElementById("color").innerHTML=x;
+	</script>
+</body>
+</html>

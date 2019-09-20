@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>JSON In/Out</title>
+	<style type="text/css">
+		body {margin: 30px; background-color: rgba(255, 99, 71, 0.9)}
+	</style>
+</head>
+<body>
+	<script type = "text/javascript">
+		var sum=0, myObj=[], i, x="<hr>";
+		function submit()
+		{
+			num1 = document.getElementById("firstNumber").value;
+			num2 = document.getElementById("secondNumber").value;
+			text1 = document.getElementById("firstText").value;
+
+			var temp={"num1" : num1, "num2" : num2, "text1" : text1};
+			myObj.push(temp);
+
+			sum += num1 + num2;
+			console.log(sum);
+			console.log(myObj);
+			for (i in myObj) {
+				x+="<br>Num1 : "+myObj[i].num1;
+				x+="<br>Num1 : "+myObj[i].num2;
+				x+="<br>Text1 : "+myObj[i].text1+"<br><hr>";
+			}
+			document.getElementById("entry").innerHTML=x;
+		}
+	</script>
+
+	<form>
+		1st Number : <input type="text" id="firstNumber"> <br>
+		2nd Number : <input type="text" id="secondNumber"> <br>
+		1st Text : <input type="text" id="firstText"> <br>
+		<input type="button" onClick="submit" value="Submit">
+	</form>
+	<p>Entry :<br> <span id = "entry"></span></p>
+</body>
+</html>
