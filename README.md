@@ -1,7 +1,7 @@
 # Scripting Language Lab Programs
 
 ## List of programs 
-`
+
 1. Intro to Python and JavaScript(week1 and week2) 
     1. Python Basics - Datatypes, Functions, List Comprehension
     2. Student Dictionary
@@ -33,4 +33,3 @@
     1. ATM app
     2. Shopping Cart app
 7. Few More...
-`
