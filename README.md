@@ -1,4 +1,13 @@
-# Scripting Language Lab Programs
+# Scripting Lab Programs Submission
+### (under Department of ISE, Ramaiah Institute of Technology)
+
+## USN : 1MS17IS145
+
+## Name : R Anurag Pillai
+
+## Section : 5A
+
+## Submitted to Dr. Mydhili K Nair (Faculty Coordinator)
 
 ## List of programs 
 
@@ -33,3 +42,24 @@
     1. ATM app
     2. Shopping Cart app
 7. Few More...
+
+
+## Screenshots 
+My GitHub Repository
+
+![github](https://user-images.githubusercontent.com/46356136/69879101-9b947100-12ec-11ea-8d22-aeed1a5e3e2a.png)
+
+
+Python Programs
+
+![python](https://user-images.githubusercontent.com/46356136/69878917-2628a080-12ec-11ea-99c4-ace25f5e9ddd.png)
+
+JavaScript Program with JSON Object and hover action
+
+![hover](https://user-images.githubusercontent.com/46356136/69878337-aea64180-12ea-11ea-9eb9-fd3e050443e1.png)
+
+
+Data Visualization Program using pandas on StudentPerformance Dataset
+
+![StudentPerformance](https://user-images.githubusercontent.com/46356136/69878167-2162ed00-12ea-11ea-8b77-f9bdb571d51c.png)
+
