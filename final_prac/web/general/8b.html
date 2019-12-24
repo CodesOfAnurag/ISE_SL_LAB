@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic JSON page</title>
+</head>
+<body>
+
+	<style type="text/css">
+		th{
+			font-size: xx-large;
+			background-color:Tomato;
+		}
+		th:hover{
+			background-color:DodgerBlue;
+			color: White;
+		}
+		td {
+			font-size: xx-large;
+		}
+	</style>
+
+	<table width=100%>
+		<tr>
+			<th onmouseover="dispHospital()" onmouseout="hide()">Hospital</th>
+			<th onmouseover="dispPatient()" onmouseout="hide()">Patient</th>
+		</tr>
+	</table>
+
+	<p><span id='txt'></span></p>
+
+	<script>
+		Hospital={
+				'name':'MS Ramaiah Memorial Hospital',
+				'loc':'Mathikere'
+			}
+		Patient={
+				'name':'Anurag',
+				'Aadhar':'6969 6969 6969',
+				'test':[
+					{'test':'sugar', 'value':'low'},
+					{'test':'bp', 'value' :'high'},
+					{'test':'blood group', 'value':'b+ve'}
+				]
+			}
+
+		function hide(){
+			console.log("blank")
+			document.getElementById("txt").hidden=true
+		}
+		function dispHospital(){
+			x="<div style='background-color:DodgerBlue; margin:10px; padding:20px'>"
+			x+="<p>Hospital Name: "+Hospital.name
+			x+="<br>Hospital Location: "+Hospital.loc+"</p></div>"
+			console.log(x)
+			document.getElementById("txt").hidden=false
+			document.getElementById('txt').innerHTML=x
+
+		}
+		function dispPatient(){
+			x="<div style='background-color:DodgerBlue; margin:10px; padding:20px'>"
+			x+="<p>Patient Name: "+Patient.name
+			x+="<br>Aadhar Number: "+Patient.Aadhar
+			x+="<br>Test"
+			for (i in Patient.test)
+				x+="<br>"+Patient.test[i].test+" : "+Patient.test[i].value
+			x+="<br></div>"
+			console.log(x)
+			document.getElementById("txt").hidden=false
+			document.getElementById('txt').innerHTML=x
+		}
+	</script>
+</body>
+</html>

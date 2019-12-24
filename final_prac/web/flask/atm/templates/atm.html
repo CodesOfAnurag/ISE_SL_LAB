@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ATM</title>
+</head>
+<body>
+	<h1>{{msg}}</h1>
+	<h3>Balance: {{balance}}</h3>
+	<form action="{{url_for('atm')}}" method="POST">
+		Amount: <input type="number" name="amt" id="amt"><br>
+		<input type="submit" name="action" value="Withdraw" onclick="return validate(this)">
+		<input type="submit" name="action" value="Deposit" onclick="return validate(this)">
+		<input type="submit" name="action" value="Exit">
+	</form>
+	<script type="text/javascript">
+		
+		function validate(){
+
+			amt=document.getElementById("amt").value
+	
+			if (amt==""){
+				alert("No Amount Entered");
+			}
+
+			if (parseInt(amt)<0){
+				alert("Negative Amount Entered");
+			}
+
+			if (parseInt(amt)>5000 && button.value=="Withdraw"){
+				alert("Crossed Withdraw Limit");
+			}
+
+			if (parseInt(amt)>50000 && button.value=="Deposit"){
+				alert("Crossed Deposit Limit");
+			}
+		}
+	</script>
+</body>
+</html>

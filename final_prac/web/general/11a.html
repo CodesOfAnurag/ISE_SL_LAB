@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Authors</title>
+	
+</head>
+<body>
+	<h3>Tabular Format</h3>
+	<hr>
+	<table style="border-radius: 10px; border-style: inset;">
+		<tr>
+			<th>Name</th>
+			<th>Country</th>
+			<th>Title</th>
+			<th>Year</th>
+		</tr>
+		<script type="text/javascript">
+		var x1="", x2="", i, details = [
+			{
+				'name':'R.D.Sharma',
+				'country':'India',
+				'title':'Mathematics',
+				'year':'2000',
+			},
+			{
+				'name':'S.L.Loney',
+				'country':'India',
+				'title':'Triginometry',
+				'year':'1999',
+			},
+			{
+				'name':'H.C.Verma',
+				'country':'India',
+				'title':'Physics',
+				'year':'1995',
+			},
+			{
+				'name':'Cormen',
+				'country':'USA',
+				'title':'Algorithms',
+				'year':'2000',
+			}
+		];
+
+		
+		for (i=0; i<2; i++)
+		{
+			x1+="<tr>"
+			x1+="<td>"+details[i].name+"</td>"
+			x1+="<td>"+details[i].country+"</td>"
+			x1+="<td>"+details[i].title+"</td>"
+			x1+="<td>"+details[i].year+"</td>"
+			x1+="</tr>"
+		}
+		document.write(x1)
+		</script>
+	</table>
+	<hr style='opacity: 25%'>
+	<h3>Textual Format</h3>
+	<hr>
+	<p>
+		<script type="text/javascript">
+		for (i=2; i<4; i++)
+		{
+			x2+="Name: "+details[i].name+"<br>"
+			x2+="Country: "+details[i].country+"<br>"
+			x2+="Title: "+details[i].title+"<br>"
+			x2+="Year: "+details[i].year+"<br>"
+			x2+="<hr style='opacity: 25%'>"
+		}
+		document.write(x2)
+		</script>
+
+	</p>
+
+	
+</body>
+</html>

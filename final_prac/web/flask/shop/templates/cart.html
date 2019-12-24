@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cart</title>
+</head>
+<body>
+	{% for i in cart %}
+		{{i[0]}} : {{i[1]}}<br>
+	{% endfor %}
+	<a href="{{url_for('bill')}}"> Show Bill </a>
+
+</body>
+</html>

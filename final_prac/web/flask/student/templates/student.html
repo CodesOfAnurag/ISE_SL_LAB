@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Registration</title>
+</head>
+<body>
+	<h3>{{msg}}</h3>
+	<form action="{{url_for('registration')}}" method="POST">
+		USN (1MS17IS001): <input type="text" name="usn"><br>
+		DOB (01/01/1999): <input type="text" name="dob"><br>
+		<input name="Register" type="submit">
+	</form>
+</body>
+</html>

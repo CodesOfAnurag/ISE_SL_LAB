@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic JSON page</title>
+</head>
+<body>
+	<style type="text/css">
+		th{
+			font-size: xx-large;
+			background-color:Tomato;
+		}
+		th:hover{
+			background-color:DodgerBlue;
+			color: White;
+		}
+		td {
+			font-size: xx-large;
+		}
+	</style>
+	<table width=100%>
+		<tr>
+			<th onmouseover="display(x=0)" onmouseout="hide()">First Model</th>
+			<th onmouseover="display(x=1)" onmouseout="hide()">Second Model</th>
+			<th onmouseover="display(x=2)" onmouseout="hide()">Third Model</th>
+		</tr>
+	</table>
+	<table width="100%" hidden id="info">
+		<tr>
+			<td>Name</td>
+			<td>Price</td>
+			<td>Year</td>
+		</tr>
+		<tr>
+			<td id="Name"></td>
+			<td id="Price"></td>
+			<td id="Year"></td>
+		</tr>
+	</table>
+	<script>
+		obj=[
+			{
+				'model':'first',
+				'name':'A1',
+				'price':'2lac',
+				'year':'2018'
+			},
+			{
+				'model':'second',
+				'name':'i20',
+				'price':'9lac',
+				'year':'2018'
+			},
+			{
+				'model':'third',
+				'name':'i10',
+				'price':'4lac',
+				'year':'2018'
+			}
+		]
+		function hide(){
+			console.log("blank")
+			document.getElementById("info").hidden=true
+		}
+		function display(x){
+			console.log(x)
+			document.getElementById("info").hidden = false
+			document.getElementById("Name").innerHTML=obj[x].name
+			document.getElementById("Price").innerHTML=obj[x].price
+			document.getElementById("Year").innerHTML=obj[x].year
+		}
+		
+	</script>
+</body>
+</html>

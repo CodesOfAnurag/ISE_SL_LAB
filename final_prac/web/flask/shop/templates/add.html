@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Items</title>
+</head>
+<body>
+	<h1>Add Items</h1>
+	<form method="POST" action="{{url_for('add')}}">
+	{% for i in items %}
+		{{i}}:<input type="number" name="{{i}}" min=0 value=0><br>
+	{% endfor %}
+	<input type="submit" value="Add to Cart">
+	</form>
+</body>
+</html>
